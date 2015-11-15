@@ -1,0 +1,290 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:400,600,700|Raleway:400,100,300,600,700);
+
+$red: #e44e4e;
+$font-oswald: 'Oswald', 'Helvetica Neue';
+$font-raleway: 'Raleway', 'Helvetica Neue';
+
+
+
+img {
+	max-width: 100%;
+	display: inline-block;
+}
+
+section {
+	padding: 60px 0;
+
+	&.red {
+		background: $red;
+	}
+
+	&.pattern {
+		background: url('img/background-pattern.png') repeat;
+	}
+}
+
+.top-part {
+	background: #ae292a;
+	padding: 20px 0;
+}
+
+
+.main-menu {
+	display: inline-block;
+
+	li {
+		color: white;
+		display: inline-block;
+		list-style: none;
+		padding-right: 20px;
+		font-size: 14px;
+		font-family: 'Open Sans', 'Helveticad Neue', 'Arial', 'sans-serif';
+		cursor: pointer;
+	}
+}
+
+.description {
+	text-align: center;
+
+	h2 {
+		color: $red;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: $font-oswald;
+		font-size: 43px;
+		font-style: italic;
+		margin-top: 50px;
+		position: relative;
+		display: inline-block;
+		padding-right: 100px;
+
+		&:before {
+			content: " ";
+			display: block;
+			position: absolute;
+			top: -23px;
+			right: 0;
+			background: url('img/mouth.png');
+			width: 70px;
+			height: 97px;
+		}
+	}
+}
+
+.download-section {
+	text-align: center;
+	font-size: 19px;
+	color: white;
+	text-transform: uppercase;
+
+	span {
+		display: block;
+		padding-top: 5px;
+		margin-bottom: 20px;
+	}
+
+	button {
+		display: inline-block;
+		color: $red;
+		border: 0;
+		padding: 20px 55px 20px 35px;
+		border-radius: 10px;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-family: $font-oswald;
+		letter-spacing: 1px;
+
+		background: url('img/button_arrow.png') no-repeat right 15px center;
+		background-color: white;
+	}
+}
+
+.list-section {
+	text-align: center;
+
+
+	h2 {
+		font-size: 27px;
+		font-family: $font-oswald;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+
+	.list-heading {
+		font-weight: 800;
+		font-size: 35px;
+		letter-spacing: 1px;
+
+		.red {
+			color: $red;
+		}
+		.green {
+			color: #129f49;
+		}
+	}
+
+
+	.lists-wrapper {
+		text-align: left;
+		max-width: 650px;
+		margin: 0 auto;
+		// max-width: 100%;
+
+		ul {
+			padding: 0;
+			margin: 0;
+			margin-top: 50px;
+
+			&.trust-list {
+				li {
+					background: url('img/check.png') no-repeat left center;
+				}
+			}
+
+			&.blurt-list {
+				li {
+					background: url('img/cross.png') no-repeat left center;
+					line-height: 21px;
+				}
+			}
+
+			li {
+				font-size: 18px;
+				font-family: $font-raleway;
+				list-style: none;
+				line-height: 18px;
+				padding-left: 35px;
+				margin-bottom: 15px;
+			}
+		}
+
+	}
+}
+
+
+.why {
+	text-align: center;
+	position: relative;
+
+	&:before {
+		content: " ";
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.3);
+		z-index: 900;
+	}
+
+	.container {
+		z-index: 9999;
+		position: relative;
+	}
+
+
+	h2 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: 600;
+		font-family: $font-oswald;
+		letter-spacing: 1px;
+		margin-bottom: 40px;
+	}
+}
+
+.list-wrapper {
+	display: inline-block;
+	text-align: left;
+	font-family: $font-raleway;
+	font-size: 18px;
+	color: white;
+
+	li {
+		margin-bottom: 25px;
+		list-style: none;
+		padding-left: 50px;
+		line-height: 30px;
+
+		&.circle-check {
+			background: url('img/check_circle.png') no-repeat left;
+		}
+		&.horn {
+			background: url('img/horn.png') no-repeat left;
+		}
+		&.binucilar {
+			background: url('img/binacular.png') no-repeat left;
+		}
+		&.chat {
+			background: url('img/chat.png') no-repeat left;
+		}
+		&.star {
+			background: url('img/star.png') no-repeat left;
+		}
+	}
+}
+
+
+.blurts {
+	color: $red;
+	font-weight: 600;
+	font-family: $font-oswald;
+	font-style: italic;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+	.list-section {
+
+		.lists-wrapper {
+			text-align: center;
+		}
+
+		.list {
+			display: inline-block;
+		}
+	}
+
+
+	.description {
+		h2 {
+			padding: 0 15px;
+			font-size: 30px;
+			line-height: 45px;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+
+footer {
+	background: $red;
+	color: white;
+	padding: 30px 0;
+	text-align: center;
+	font-size: 18px;
+	font-family: $font-raleway;
+
+	.facebook {
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		background: url('img/facebook.png');
+	}
+	.twitter {
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		background: url('img/twitter.png');
+	}
+}
+
+
