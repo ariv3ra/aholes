@@ -56,21 +56,58 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-h1{
+body{
+    background-image: url("../img/background-pattern.png");
+    background-repeat: repeat;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #E44E4E;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.logo{
+    border-radius: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.box{
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    border-color: #8c8c8c;
+    padding: 30px;
+}
+
+h1{ 
     font-size: 24px;
 }
 
 .greeting{
-    color: green;
+    color: #E44E4E;
 }
 
 form{
     font-size: 18px;
+    margin-top: 30px;
+    display: inline-block;
+    width: auto;
 }
 
+.btn-primary{
+    padding: 6px 120px;
+}
 
-
-
+.letter-icon{
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 30px;
+}
 
 /* ==========================================================================
    Media Queries

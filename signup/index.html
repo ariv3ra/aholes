@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -23,21 +24,34 @@
         <![endif]-->
 
         <div class="container">
-            <h1 class="greeting">
-                Hey pal! Let Blurt help you with fixing your DNS issues. Sign up now for a free step-by-step guidance.
-            </h1>
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
 
-            <form action="">
-                <div class="form-group">
-                    <label>Please enter your email address</label>
-                    <input type="email" class="form-control" value="example@awesome.com" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                </div>
-                <div class="form-group">
-                    <input type="submit" class ="btn btn-primary" value="Submit!" >
-                </div>
+            <div class="box animated bounce">
+                <h1 class="greeting">
+                    Let Blurt help you with fixing your DNS issues.
+                </h1>
+
+                <p>
+                    Sign up now for a free step-by-step guidance.
+                </p>
+
+                <form action="" class="signup-form">
+                    <div class="form-group">
+                        <label>Please enter your email address</label>
+                        <input type="email" class="form-control" value="example@awesome.com" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class ="btn btn-primary" value="Submit!" >
+                    </div>
+
+                </form>   
                 
-            </form>
-
+                <div class="letter-icon">
+                <img src="img/letter-icon.png">
+                </div>
+            </div> 
         </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
